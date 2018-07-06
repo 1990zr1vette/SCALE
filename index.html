@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>SCALE ZERO</title>
+
+		<link rel="stylesheet" href="css/styles.css">
+
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/inView.js"></script>
+	</head>
+
+	<body id="body">
+		<header>
+			<ul>
+				<li class="has-sub-menu">
+					<span>ITEM 1</span>
+					<ul class="sub-menu">
+						<li>SUB ITEM 1</li>
+						<li>SUB ITEM 2</li>
+						<li>SUB ITEM 3</li>
+						<li>SUB ITEM 4</li>
+					</ul>
+				</li>
+				<li class="has-sub-menu">
+					<span>ITEM 2</span>
+					<ul class="sub-menu">
+						<li>SUB ITEM 1</li>
+						<li>SUB ITEM 2</li>
+						<li>SUB ITEM 3</li>
+						<li>SUB ITEM 4</li>
+					</ul>
+				</li>
+				<li class="has-sub-menu">
+					<span>ITEM 3</span>
+					<ul class="sub-menu">
+						<li>SUB ITEM 1</li>
+						<li>SUB ITEM 2</li>
+						<li>SUB ITEM 3</li>
+						<li>SUB ITEM 4</li>
+					</ul>					
+				</li>
+				<li class="has-sub-menu">
+					<span>ITEM 4</span>
+					<ul class="sub-menu">
+						<li>SUB ITEM 1</li>
+						<li>SUB ITEM 2</li>
+						<li>SUB ITEM 3</li>
+						<li>SUB ITEM 4</li>
+					</ul>
+				</li>
+			</ul>
+		</header>
+
+<script type="text/javascript">
+$('.has-sub-menu').hover(
+	function()
+	{
+		var submenu = $(this).find('.sub-menu');
+		$(submenu).css('display','block').addClass('scale');
+		setTimeout(function(){ $(submenu).removeClass('scale'); }, 490);
+	},
+	function()
+	{
+		var submenu = $(this).find('.sub-menu');
+		$(submenu).addClass('scalezero');
+		setTimeout(function(){ $(submenu).removeClass('scalezero').css('display','none'); }, 490);
+	}
+);	
+</script>
+
+
+	</body>
+
+</html>

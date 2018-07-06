@@ -1,0 +1,89 @@
+
+*
+{
+	margin:0;
+	padding:0;
+}
+
+html, body 
+{
+    width:100%;
+    height:100%;
+    background-color:steelblue;
+    color:#FFF;
+    
+}
+
+ul
+{
+	list-style:none;
+}
+
+li
+{
+	float:left;
+}
+
+header
+{
+	width:100%;
+	height:80px;
+	line-height:80px;
+	background-color:#000;
+}
+
+header ul li
+{
+	width:25%;
+	text-align:center;
+}
+
+header ul li ul 
+{
+	background-color:#000;
+}
+
+header ul li ul li
+{
+	width:100%;
+	float:none;
+	text-align:center;
+}
+
+.sub-menu
+{
+	display:none;
+}
+
+.scale
+{
+	animation:scale .5s;
+}
+
+@keyframes scale
+{
+	0%
+	{
+		transform:scale(0);
+	}
+	100%
+	{
+	}
+}
+
+.scalezero
+{
+	animation:scalezero .5s;
+}
+
+@keyframes scalezero
+{
+	0%
+	{
+		
+	}
+	100%
+	{
+		transform:scale(0);
+	}
+}
